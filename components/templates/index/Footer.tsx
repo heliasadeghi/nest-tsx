@@ -1,4 +1,4 @@
-import FooterDetails from "@/components/modules/FooterDetails/FooterDetails";
+// import FooterDetails from "@/components/modules/footerDetiles/FooterDetails";
 import React, { useState } from "react";
 
 interface PossibilityItems {
