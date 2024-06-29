@@ -4,7 +4,6 @@ import FooterDetails from "@/components/modules/footerDetiles/FooterDetiles";
 interface PossibilityItem {
   id: number;
   name: string;
-  title: string;
 }
 
 interface Possibility {
