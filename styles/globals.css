@@ -3,31 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-gray-00: rgba(189, 186, 189, 0.3);
+  --bg-gray-01: hsl(0, 0%, 75%);
+  --bg-gray-02: hsl(257, 7%, 63%);
+  --bg-gray-03: hsl(255, 11%, 22%);
+  --bg-gray-04: hsl(260, 8%, 14%);
+  --bg-red: hsl(0, 87%, 67%);
+  --bg-dark-violet: hsl(257, 27%, 26%);
+  --bg-cyan: hsl(180, 66%, 49%);
+  --bg-cyan-hover: rgba(42, 207, 207, 0.5);
+  --bg-cyan-hover01: rgb(117, 213, 213);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+  width: 5px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
 }
