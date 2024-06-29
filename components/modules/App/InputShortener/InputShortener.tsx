@@ -1,8 +1,6 @@
 import { log } from "console";
 import React, { useState } from "react";
-import ShowShortenLink from "../ShowShortenLink/showShortenLink";
 
-// Define an interface for the props
 interface InputShortenerProps {
   setInputValue: (value: string) => void;
 }
