@@ -1,11 +1,17 @@
 import React from "react";
 
 // Define an interface for the props
-interface Possibility {
+interface PossibilityItem {
   id: number;
   name: string;
+  title: string;
 }
 
+interface Possibility {
+  id: number;
+  items: PossibilityItem[];
+  title: string;
+}
 // Define an interface for the component's props
 interface FooterDetailsProps {
   possibilities: Possibility[];
