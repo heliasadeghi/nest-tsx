@@ -1,21 +1,21 @@
+import FooterDetails from "@/components/modules/FooterDetails/FooterDetails";
 import React, { useState } from "react";
-import FooterDetails from "@/components/modules/footerDetiles/FooterDetiles";
 
-interface PossibilityItem {
+interface PossibilityItems {
   id: number;
   name: string;
 }
 
 interface Possibility {
   id: number;
-  items: PossibilityItem[];
+  items: PossibilityItems[];
   title: string;
 }
 
 interface FooterProps {}
 
 function Footer({}: FooterProps) {
-  const [possibilities, setPossibilities] = useState<Possibility[]>([
+  const [possibilitiesItem, setPossibilities] = useState<Possibility[]>([
     {
       id: 1,
       items: [
@@ -54,7 +54,7 @@ function Footer({}: FooterProps) {
         </h2>
       </div>
       <div className="w-full sm:w-5/12 flex flex-col sm:flex-row  gap-10 justify-center items-center sm:justify-start sm:items-start text-center sm:text-start">
-        <FooterDetails possibilities={possibilities} />
+        {/* <FooterDetails possibilitiesData={possibilitiesItem} /> */}
       </div>
       <div className="w-full sm:w-3/12 flex flex-row  gap-5  hover:text-[var(--bg-cyan)] transition-all ease-linear duration-100 cursor-pointer text-[20px] justify-center sm:justify-start mt-5 sm:mt-0">
         {/*end svg facebook */}
